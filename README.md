@@ -1,0 +1,48 @@
+NOTE: every image is uploaded above.
+you need an OS to run as wazuh agent
+
+                                            Security monitoring with Wazuh 
+Introduction:
+Wazuh is an open source tool for security monitoring and threat detection, log analysis, file integrity monitoring, compliance monitoring and even vulnerability detection. Wazuh is a Security Information and Event Management (SIEM) that fits seamlessly with Elastic Stack (ELK) to provide log analysis tools and visualization.
+Wazuh is a valuable/powerful open source tool and can be utilized by everyone. Note with the emerging level of threats and cyber attacks, setting up your own SIEM is a great idea.
+Wazuh Architecture:
+Wazuh server                                    it collects and analyze data from agents
+Wazuh agent                                    installed on endpoints to monitor logs
+Wazuh dashboard                           the web interface
+Wazuh indexer                                 stores and indexes alerts
+
+
+Installing wazuh server:
+For production environment: https://documentation.wazuh.com/current/installation-guide/index.html
+For lab environment: 
+OVA file: 
+The OVA file is imported to VM, VirutalBox of user’s choice. The OVA file is an easy to deploy option and it comes handy for personal use.
+Configuring on VM the following is needed;
+4 CPU cores, 8GB of RAM and storage of 50GB
+
+ wazuh1.png
+
+To download the ova file click on the highlighted link.
+ wazuh2.png
+ 
+After the ova file is downloaded it is imported to your virtual machine, like in the image above. To start the wazuh server click the start button circled in red.
+Note: wazuh does not have a browser, so another OS of choice will be used to run wazuh. In this example I used kali linux as shown below.
+
+ wazuh3.png
+ 
+The username and password are provided as in the image above.
+
+ wazuh4.png
+ 
+Use the command highlighted to get the ip address of the wazuh server. This ip address is then used to login to wazuh.
+
+ wazuh5.png
+ 
+Username: admin
+Password: admin
+
+wazuh6.png
+
+the dashboard should look like the image above.
+ 
+
