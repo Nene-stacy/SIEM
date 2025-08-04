@@ -20,7 +20,7 @@ The OVA file is imported to VM, VirutalBox of user’s choice. The OVA file is a
 Configuring on VM the following is needed;
 4 CPU cores, 8GB of RAM and storage of 50GB
 
- wazuh1.png
+wazuh1.png
 
 To download the ova file click on the highlighted link.
  wazuh2.png
